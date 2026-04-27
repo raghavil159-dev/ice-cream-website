@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart items</title>
+    </head>
+      <body>
+        <h1>Your Selected Items</h1>
+        <div id="cart-list">
+        <p>Total Items In Cart: <span id="dispaly-count">0</span></p>
+      </div>
+      <a href="index.html">Back To Shopping</a>  
+
+      <script>
+        let count = localStorage.getItem('cartCount') || 0;
+        document.getElementById('dispaly-count').textContent = count;
+
+      </script>
+      </body>
+</html>
