@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Icecream Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+
+    </head>
+
+    <body>
+        <header>
+           
+            <h1 id="title" ></h1>
+            <div class="right-section">
+             <input type="text" id="search-bar" placeholder="Search your favourite icecream" class="search">
+            <div id="cart-icon">
+                  <a href="cart.html" style="text-decoration: none; color:inherit;">
+                🛒<sup id="cart-count">0</sup>
+                </a>
+            </div>
+             </div>
+            
+
+            <div class="button">
+                <button id="home-btn">Home</button>
+                <button id="about-btn">About</button>
+                <button id="menu-btn">Menu</button>
+                <button id="contact-btn">Contact</button>
+                <button id="order-btn" onclick="alert('Welcome to RK ice cream, \n Choose your favourite flavour from menu')">Order Now</button>
+            </div>
+        </header>
+
+        <section id="About">
+
+            <div class="content">
+            <h2>Scoops of Happiness</h2>
+            <strong><i><p>Every scoop at [RK ice cream] is a little moment of joy! 🍦</p></i></strong>
+            <strong><i><p>Crafted with love, care, and fresh ingredients, 
+                
+                <br>
+                
+                from classic favorites to unique creations.</p></i></strong>
+            <strong><i><p>Ice cream isn’t just a treat—it’s a happiness experience.
+                
+                <br>
+                
+                Grab a cone, share a laugh, and brighten your day!</p></i></strong>  
+            </div>      
+
+            <p id="about"></p>
+
+            <button id="Abt" onclick="newQuote()">RK 🍦</button>
+
+        </section>
+
+        <section id="Menu">
+
+            <div class="flavour-cards">
+                <div class="card">
+                    <h3>Chocolate🍫 flavour-170$</h3>
+                    <img src="./images/chocolate.jpg" alt="chocolate flavour"/>
+                    <em><strong><p class="chocoa">Made with real cocoa, fresh milk &
+                    <br>    
+                    natural sweeteners.Pure, creamy, and 
+                    <br>
+                    naturally delicious—every scoop 
+                    <br>
+                    is chocolate happiness!</p></strong></em>
+                   <button class="add" onclick="addToCart()">Add to Cart</button>
+                   
+                </div>
+
+                <div class="card">
+                    <h3>Strawberry🍓 -150$</h3>
+                    <img src="./images/strawberry.jpg" alt="strawberry flavour"/>
+                    <em><strong><p class="straw">Made with fresh strawberries & natural cream,
+                        
+                        <br>
+                        
+                        bursting with real fruity flavor.
+                        
+                        <br>
+                        
+                        Sweet, creamy, and naturally refreshing!</p></strong></em>
+                        <button class="add" onclick="addToCart()">Add to Cart</button>
+                        
+                </div>
+
+                <div class="card">
+                    <h3>Mango🥭 -120$</h3>
+                    <img src="./images/mango.jpg" alt="mango flavour"/>
+                    <em><strong><p class="mango">Made with ripe, juicy mangoes & fresh cream,
+                        
+                        <br>
+                        
+                        naturally sweet and creamy.
+                        
+                        <br>
+                        
+                        Every scoop is a tropical delight!</p></strong></em>
+                        <button class="add" onclick="addToCart()">Add to Cart</button>
+                       
+                    </div>
+
+                <div class="card">
+                    <h3>RK special "Mixed Ice Cream🍨 -180$"</h3>
+                    <img src="./images/mixed.jpg" alt="BR special flavour"/>
+                    <em><strong><p class="mix">A delightful blend of fresh fruits, 
+                        
+                        <br>
+                        
+                        chocolates, and creamy goodness,
+                        
+                        <br>
+
+                        naturally crafted.Every scoop brings 
+
+                        <br>
+
+                        a party offlavors in your mouth!</p></strong></em>
+                        <button class="add" onclick="addToCart()">Add to Cart</button>
+                       
+                    </div>
+
+                <div class="card">
+                     <h3>Nuts Ice Cream🍦 -250$</h3>
+                    <img src="./images/nuts.jpg" alt="nuts flavour"/>
+                    <em><strong><p class="nut">Made with fresh cream and real crunchy nuts,
+                        
+                        <br>
+
+                        naturally rich and satisfying.
+                        
+                        <br>
+
+                        Every scoop is a perfect nutty delight!</p></strong></em>
+                        <button class="add" onclick="addToCart()">Add to Cart +</button>
+                        
+                     </div>
+                    </div>
+
+            </div>
+
+        </section>
+
+        <section id="Contact">
+            <form method="POST">
+                <div class="input">
+                
+                <input class="name" type="text" id="name" placeholder="name" required>
+               
+                <br>
+                <br>
+                
+                <input class="email" type="email" id="email" placeholder="@email" required>
+                
+                <br>
+                <br>
+                
+                <input class="phone" type="tel" id="phone" placeholder="phone">
+                
+                <br>
+                <br>
+                
+                <textarea id="message" type="text" placeholder="message here..." required></textarea>
+                <p id="count">0/200</p>
+                </div>
+                </div>
+                <br>
+                <br>
+                <button id="send">Send Message</button>
+                </form>
+
+            
+
+        </section>
+        
+        <footer>
+        <a href="#">@2026 RK Ice Cream</a>
+        <br>
+        <br>
+        <br>
+        <div class="footer">
+        <a href="#"><img src="./images/twitter.jpg" alt="twitter"/></a>
+        <a href="#"><img src="./images/facebook.jpg" alt="fb"/></a>
+        <a href="#"><img src="./images/x.jpg" alt="x"/></a>
+        </div>    
+    </footer>
+
+        <script src="index.js"></script>
+
+      </script>
+      <div id="toast"></div>
+
+    </body>
+
+</html>
